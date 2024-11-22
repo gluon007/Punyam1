@@ -250,3 +250,36 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   width: 100%;
 }
+footer {
+  background-color: grey; 
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  height: 130px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.mishra,
+    .footer-menu {
+      display: flex;
+      flex-direction: column;
+    }
+    .mishra a,
+    .footer-menu a {
+      text-decoration: none;
+      color: #fff;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+    .mishra a img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
