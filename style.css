@@ -64,7 +64,7 @@ header .logo {
     background: #eee;
 }
 
-.main-nav {
+header.main-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -75,7 +75,7 @@ header .logo {
     z-index: 10;
 }
 
-.main-nav-container {
+header.main-nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,6 +256,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   height: 130px;
+  position: relative;
 }
 
 .footer-content {
@@ -283,3 +284,4 @@ footer {
       height: 20px;
       margin-right: 10px;
     }
+   
