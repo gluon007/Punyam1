@@ -20,6 +20,7 @@ header {
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
+    color: #eee;
 }
 
 .login-container {
@@ -64,7 +65,7 @@ header .logo {
     background: #eee;
 }
 
-header.main-nav {
+header.main-nav a {
     display: flex;
     justify-content: center;
     gap: 20px;
