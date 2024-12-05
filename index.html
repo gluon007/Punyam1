@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
-        
         <div class="logo">PUNYAM</div>
         <nav class="main-nav">
             <div class="main-nav-container">
@@ -21,59 +22,56 @@
             </div>
         </nav>
         <div class="login-container">
-            <button class="login-register">▼ Login/Register</button>
             <div class="dropdown">
+                <button onclick= "myfunction()" class="login-register">▼ Login/Register</button>
+
                 <a href="#">Login</a>
                 <a href="#">Register</a>
             </div>
         </div>
-    
-
- <!-- <nav class="main-nav">
-        <div class="main-nav-container">
-            <a href="#">Home</a>
-            <a href="#about-us">About</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#">Donate</a>
-            <a href="#">Campaigns</a>
-        </div>
-    </nav>-->
     </header>
-
-    <section class="banner">
-        <div class="banner-content">
-            <h1>दानं धर्मस्य कारणम्, दानेन प्रीयते जनः</h1>
-            <p>Charity is the essence of righteousness, and through giving, we win hearts.</p>
-        </div>
-    </section>
+    <div>
+        <section class="banner">
+            <img src="I.jpg" alt="imagE">
+            <div class="banner-content">
+                <h1>दानं धर्मस्य कारणम्, दानेन प्रीयते जनः</h1>
+                <p>Charity is the essence of righteousness, and through giving, we win hearts.</p>
+            </div>
+        </section>
+    </div>
     <div class="container">
         <div class="about-section" id="about-us">
             <h2><b>About us</b></h2>
-            <p> निर्वाण षट्कम इस बारे में है कि – आप यह या वह नहीं बनना चाहते। यदि आप यह या वह नहीं बनना चाहते, तो आप क्या बनना चाहते हैं? आपका मन यह नहीं समझ सकता, क्योंकि आपका मन हमेशा कुछ न कुछ बनना चाहता है। अगर मैं कहूं, “मैं यह नहीं बनना चाहता, मैं वह नहीं बनना चाहता,” तो आप सोचेंगे, “अरे, कोई महान चीज की बात कर रहे हैं!” महान नहीं। “अरे, तो क्‍या रिक्‍तता?” रिक्‍तता भी नहीं। “शून्यता?” शून्यता भी नहीं।
-                oluptates praesentium voluptatum omnis blanditiis, vitae eligendi doloremque. Ullam repellat odio sapiente minima veritatis. Maxime quaerat necessitatibus nisi repudiandae animi tempora impedit. Maiores possimus ipsum quod.</p>
+            <p> निर्वाण षट्कम इस बारे में है कि – आप यह या वह नहीं बनना चाहते। यदि आप यह या वह नहीं बनना चाहते, तो आप
+                क्या बनना चाहते हैं? आपका मन यह नहीं समझ सकता, क्योंकि आपका मन हमेशा कुछ न कुछ बनना चाहता है। अगर मैं
+                कहूं, “मैं यह नहीं बनना चाहता, मैं वह नहीं बनना चाहता,” तो आप सोचेंगे, “अरे, कोई महान चीज की बात कर रहे
+                हैं!” महान नहीं। “अरे, तो क्‍या रिक्‍तता?” रिक्‍तता भी नहीं। “शून्यता?” शून्यता भी नहीं।
+                oluptates praesentium voluptatum omnis blanditiis, vitae eligendi doloremque. Ullam repellat odio
+                sapiente minima veritatis. Maxime quaerat necessitatibus nisi repudiandae animi tempora impedit. Maiores
+                possimus ipsum quod.</p>
         </div>
         <div class="e">
-            <h2>0000</h2>
+            <h2 style="font-size: 500%;">0000</h2>
             <p>Ngo Registered</p>
             <div class="button">
-                <button class="Donate"> Donate</button>
-                <button class="Compaigns"> Compaigns</button>
-                <button class="ngo-list">Ngo-list</button>
+                <button class="Donate"> <strong>Donate</strong></button>
+                <button class="Compaigns"> <strong>Campaigns</strong></button>
+                <button class="ngo-list"><strong>Ngo-list</strong></button>
             </div>
         </div>
     </div>
     <div class="contact-form" id="contact">
         <h2><b>Contact Us</b></h2>
         <form>
-            <div class="Vaibhav">
+            <div class="text-fields">
                 <label for="name"><i class="icon">👤</i></label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
             </div>
-            <div class="Vaibhav">
+            <div class="text-fields">
                 <label for="email"><i class="icon">✉️</i></label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
-            <div class="Vaibhav">
+            <div class="text-fields">
                 <label for="message"><i class="icon">💬</i></label>
                 <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
             </div>
@@ -81,19 +79,22 @@
         </form>
     </div>
 
-    <footer >
+    <footer>
         <div class="footer-content">
-        <div class="mishra">
-          <a href="#"><img src="U.jpg" alt="Instagram"> username</a>
-          <a href="#"><img src="p.jpg" alt="Twitter"> username</a>
-          <a href="#"><img src="f.jpg" alt="Facebook"> username</a>
-          <a href="#"><img src="b.jpg" alt="LinkedIn"> username</a>
+            <div class="mishra">
+                <a href="#"><img src="U.jpg" alt="Instagram"> @username.instagram</a>
+                <a href="#"><img src="p.jpg" alt="X"> @username.x</a>
+                <a href="#"><img src="f.jpg" alt="Facebook"> @username.facebook</a>
+                <a href="#"><img src="b.jpg" alt="LinkedIn"> @username.linkedlist</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">campaigns</a>
+                <a href="#">Donate us</a>
+                <a href="#">help</a>
+                <a href="#">contact us</a>
+            </div>
         </div>
-        <div class="footer-menu">
-          <a href="#">Home</a>
-          <a href="#">Home</a>
-        </div>
-    </div>
-       </footer>
+    </footer>
 </body>
+
 </html>
