@@ -1,131 +1,131 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    background: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #eee;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #eee;
 }
 
 .login-container {
-    position: relative;
-    margin-right: 50px;
+  position: relative;
+  margin-right: 50px;
 }
 
 .login-register {
-    background: green;
-    color: white;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background: green;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-register:hover + .dropdown,
 .dropdown:hover {
-    display: block;
+  display: block;
 }
 
 .dropdown {
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 0;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 10;
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .dropdown a {
-    display: block;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
 }
 
 .dropdown a:hover {
-    background: #eee;
+  background: #eee;
 }
 
 header.main-nav a {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 10;
 }
 
 header.main-nav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-nav-container a {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .main-nav-container a:hover {
-    background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .banner {
-    height: 300px;
-    background: url('I.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-    margin-top: 60px;
+  height: 300px;
+  background: url('I.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
 }
 
 .banner-content h1 {
-    font-size: 2.5em;
-    margin: 0;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 .banner-content p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .container{
 display: flex;
@@ -137,152 +137,152 @@ overflow: hidden;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .about-section {
-    flex: 1;
-    background-color: grey;
-    padding: 20px;
-    text-align: left;
-    text-align: center;
-  }
-  .about-section h2 {
-    margin: 0;
-    color: #333;
-  }
-  
-  .about-section p {
-    margin-top: 10px;
-    color: black;
-    line-height: 1.6;
-  }
-  .e {
-    flex: 1;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-  }
-  .e h2 {
-    font-size: 48px;
-    margin: 0;
-  }
-  
-  .e p {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  .buttons {
-    margin-top: 20px;
-  }
-  button {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
- e.donate {
-    background-color: #28a745;
-    color: #fff;
-  }
-  
-  button.campaigns {
-    background-color: green;
-    color: #000;
-    border: 2px solid #28a745;
-  }
-  
-  button.ngo-list {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #333;
-  }  
-  .contact-form{
-    background-color: #d3d3d3;
-    padding: 20px 30px;
-    border-radius: 8px;
-    width: 400px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+  flex: 1;
+  background-color: grey;
+  padding: 20px;
+  text-align: left;
+  text-align: center;
 }
-.Vaibhav{
-  margin-bottom: 15px ;
-  display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 5px;
-}
-.Vaibhav label{
-  margin-right: 10px;
-  color: #888;
-  font-size: 18px;
-}
-.Vaibhav input,
-.Vaibhav textarea {
-    border: none;
-    outline: none;
-    flex: 1;
-    padding: 8px;
-    font-size: 14px;
+.about-section h2 {
+  margin: 0;
+  color: #333;
 }
 
-.Vaibhav textarea {
-    resize: none;
+.about-section p {
+  margin-top: 10px;
+  color: black;
+  line-height: 1.6;
 }
-.btn {
-  background-color: #28a745;
-  color: white;
-  border: none;
+.e {
+  flex: 1;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.e h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.e p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.buttons {
+  margin-top: 20px;
+}
+button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
-  width: 100%;
+}
+e.donate {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.campaigns {
+  background-color: green;
+  color: #000;
+  border: 2px solid #28a745;
+}
+
+button.ngo-list {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #333;
+}  
+.contact-form{
+  background-color: #d3d3d3;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.Vaibhav{
+margin-bottom: 15px ;
+display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+}
+.Vaibhav label{
+margin-right: 10px;
+color: #888;
+font-size: 18px;
+}
+.Vaibhav input,
+.Vaibhav textarea {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.Vaibhav textarea {
+  resize: none;
+}
+.btn {
+background-color: #28a745;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
 }
 footer {
-  background-color: grey; 
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  height: 130px;
-  position: relative;
+background-color: grey; 
+color: #fff;
+padding: 20px 0;
+text-align: center;
+height: 130px;
+position: relative;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  margin: 0 auto;
+display: flex;
+justify-content: space-between;
+max-width: 900px;
+margin: 0 auto;
 }
 .mishra,
-    .footer-menu {
-      display: flex;
-      flex-direction: column;
-    }
-    .mishra a,
-    .footer-menu a {
-      text-decoration: none;
-      color: #fff;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-    }
-    .mishra a img {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
-   
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .mishra a,
+  .footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .mishra a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+ 
