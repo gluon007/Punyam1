@@ -19,41 +19,43 @@
  
   document.addEventListener('DOMContentLoaded', () => {
     const banner = document.querySelector('.banner');
-    const images = {
-      home: 'g.jpg',
-      about: 'f.jpg',
-      contact: 'b.jpg',
-      donate: 'I.jpg',
-      campaigns: 'p.jpg',
-    };
-  
-    function changeBanner(imageUrl) {
-      console.log(`Changing to: ${imageUrl}`); 
+    const images = [
+       'g.jpg',
+       'f.jpg',
+       'b.jpg',
+       'I.jpg',
+       'p.jpg',
+      ];
+    let currentIndex =0 
+    function changeBanner(index) {
+      console.log(`Changing to: ${images[index]}`); 
       banner.style.opacity = '0';
       setTimeout(() => {
-        banner.style.backgroundImage = `url('${imageUrl}')`; 
+        banner.style.backgroundImage = `url('${images[index]}')`; 
         banner.style.opacity = '1'; 
       }, 500); 
     }
   
-    document.getElementById('home-link').addEventListener('click', () => {
-      changeBanner(images.home);
+    document.querySelector('.left-arrow').addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      changeBanner(currentIndex);
     });
   
-    document.getElementById('about-link').addEventListener('click', () => {
-      changeBanner(images.about);
+    document.querySelector('.right-arrow').addEventListener('click', () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1; 
+      changeBanner(currentIndex);
     });
   
-    document.getElementById('contact-link').addEventListener('click', () => {
-      changeBanner(images.contact);
+   // document.getElementById('contact-link').addEventListener('click', () => {
+      changeBanner(currentIndex);
     });
   
-    document.getElementById('donate-link').addEventListener('click', () => {
+   /* document.getElementById('donate-link').addEventListener('click', () => {
       changeBanner(images.donate);
     });
   
     document.getElementById('campaigns-link').addEventListener('click', () => {
       changeBanner(images.campaigns);
     });
-  });
+  });*/
   
