@@ -1,32 +1,16 @@
 
- /* document.addEventListener('DOMContentLoaded', () => {
-    const banner = document.querySelector('.banner');
-    const images = ['g.jpg', 'I.jpg', 'p.jpg'];
-    let index = 0;
-  
-    setInterval(() => {
-      banner.style.opacity = '0';
-  
-      setTimeout(() => {
-        index = (index + 1) % images.length;
-        console.log(`Changing to: ${images[index]}`);
-        banner.style.backgroundImage = `url('${images[index]}')`;
-  
-        banner.style.opacity = '1';
-      }, 500); 
-    }, 4000);
-  });*/
  
   document.addEventListener('DOMContentLoaded', () => {
     const banner = document.querySelector('.banner');
     const images = [
-       'g.jpg',
-       'f.jpg',
+       'te.jpg',
+       'kk.jpg',
        'b.jpg',
        'I.jpg',
        'p.jpg',
       ];
-    let currentIndex =0 
+    let c =0 ;
+    let mishra;
     function changeBanner(index) {
       console.log(`Changing to: ${images[index]}`); 
       banner.style.opacity = '0';
@@ -35,19 +19,33 @@
         banner.style.opacity = '1'; 
       }, 500); 
     }
+    function startSlideshow()
+    {
+      mishra = setInterval(() => {
+        c= (c +1 )% images.length;
+        changeBanner (c);
+      }, 3000);
+    }
+    function re()
+    {
+      clearInterval(intervalId);
+      startSlideshow();
+    }
   
     document.querySelector('.left-arrow').addEventListener('click', () => {
-      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-      changeBanner(currentIndex);
+      c = (c === 0) ? images.length - 1 : c - 1;
+      changeBanner(c);
     });
   
     document.querySelector('.right-arrow').addEventListener('click', () => {
-      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1; 
-      changeBanner(currentIndex);
+      c = (c === images.length - 1) ? 0 : c + 1; 
+      changeBanner(c);
     });
   
    // document.getElementById('contact-link').addEventListener('click', () => {
-      changeBanner(currentIndex);
+      changeBanner(c);
+      startSlideshow();
+
     });
   
    /* document.getElementById('donate-link').addEventListener('click', () => {

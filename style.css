@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  padding-top: 10px;
 }
 
 header {
@@ -207,8 +208,10 @@ button.ngo-list {
   padding: 20px 30px;
   border-radius: 8px;
   width: 100%;
+  max-width: 1168px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden;
 }
 .contact-form h2 {
   margin-bottom: 20px;
