@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding-top: 10px;
+  padding-top: 7px;
+
 }
 
 header {
@@ -17,13 +18,11 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 header .logo {
   font-size: 1.5em;
   font-weight: bold;
   color: #eee;
 }
-
 .login-container {
   position: relative;
   margin-right: 50px;
@@ -60,6 +59,8 @@ header .logo {
   padding: 10px;
   color: black;
   text-decoration: none;
+  width: 150px;
+  text-align: center;
 }
 
 .dropdown a:hover {
@@ -94,11 +95,11 @@ header.main-nav-container {
 .main-nav-container a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
-
 .banner {
+  padding-top: 80px;
   width: 100%;
   height: 300px;
-  background: url('I.jpg') no-repeat center center;
+  background: url('shrey.jpg') no-repeat center center/cover;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -134,27 +135,43 @@ footer {
 display: flex;
 width: 100%;
 max-width: 100%;
-border: 1px solid #ccc;
-border-radius: 8px;
+/*border: 1px solid #ccc;*/
+border-radius: 10px;
 overflow: hidden;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+flex-direction: row;
+height: 70vh;
+background-color: #fff;
 }
+
 .about-section {
   flex: 1;
-  background-color: grey;
-  padding: 20px;
-  text-align: left;
-  text-align: center;
+  background-color:#f4f4f4;
+  padding: 40px 30px;
+ /* text-align: left;*/
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
+
 .about-section h2 {
-  margin: 0;
+  font-size: 28px;
+  text-align: center;
+ /* margin: 0;*/
+  font-weight: bold;
   color: #333;
+  margin-bottom: 20px;
 }
 .about-section p {
-  margin-top: 10px;
-  color: black;
-  line-height: 1.6;
+  font-size: 16px;
+  /*margin-top: 10px;*/
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
 }
+
 .e {
   flex: 1;
   background-color: #000;
@@ -163,46 +180,57 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+
 .e h2 {
   font-size: 48px;
   margin: 0;
+  color: rgb(185, 10, 39);
 }
 .e p {
   margin: 10px 0;
   font-size: 18px;
+  color: #fff;
+  font-weight: 500;
 }
 .buttons {
   margin-top: 20px;
 }
 button {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  margin: 10px auto;
-  padding: 10px 20px;
+  margin:8px 5px;
+  padding: 10px 30px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 20px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 e.donate {
-  background-color: #28a745;
+  background-color: rgb(185, 10, 39);
   color: #fff;
 }
 
 button.campaigns {
-  background-color: green;
+  background-color: #fff;
   color: #000;
-  border: 2px solid #28a745;
+  border: 2px solid #000;
 }
 
 button.ngo-list {
   background-color: #fff;
   color: #000;
-  border: 2px solid #333;
+  border: 2px solid #000;
 }  
+button:hover{
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
 .contact-form{
   background-color: #d3d3d3;
   padding: 20px 30px;
@@ -212,12 +240,15 @@ button.ngo-list {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow: hidden;
+  margin: 0 auto;
 }
+
 .contact-form h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
 }
+
 .Vaibhav{
 margin-bottom: 15px ;
 display: flex;
@@ -227,11 +258,15 @@ display: flex;
   background-color: #fff;
   padding: 5px;
 }
+
 .Vaibhav label{
 margin-right: 10px;
 color: #888;
 font-size: 18px;
+display: flex;
+text-align: center;
 }
+
 .Vaibhav input,
 .Vaibhav textarea {
   border: none;
@@ -239,11 +274,14 @@ font-size: 18px;
   flex: 1;
   padding: 8px;
   font-size: 14px;
+  color: #333;
 }
 
 .Vaibhav textarea {
   resize: none;
+  height: 60px;
 }
+
 .btn {
 background-color: rgb(201, 17, 48);
 color: white;
@@ -253,7 +291,10 @@ font-size: 16px;
 border-radius: 5px;
 cursor: pointer;
 width: 100%;
+max-width: 200px; /* Limits the button width */
+  margin: 0 auto;
 }
+
 footer {
 background-color: grey; 
 color: #fff;

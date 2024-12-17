@@ -3,11 +3,12 @@
   document.addEventListener('DOMContentLoaded', () => {
     const banner = document.querySelector('.banner');
     const images = [
-       'te.jpg',
-       'kk.jpg',
-       'b.jpg',
-       'I.jpg',
-       'p.jpg',
+       'vaibhav.jpg',
+       'shrey.jpg',
+       'shashank.jpg',
+       'kushal.jpg',
+       'w.jpg',
+       'x.jpg'
       ];
     let c =0 ;
     let mishra;
